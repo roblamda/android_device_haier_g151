@@ -124,9 +124,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
 
-# Shipping API level (for CTS backward compatibility)
-PRODUCT_SHIPPING_API_LEVEL := 19
-
 # System Properties
 $(call inherit-product, device/haier/g151/system_prop.mk)
 
