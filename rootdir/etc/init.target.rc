@@ -38,6 +38,8 @@ on boot
     write /sys/block/mmcblk0/queue/add_random 0
     write /sys/block/mmcblk0/bdi/read_ahead_kb 128
 
+    setprop ro.boot.btmacaddr "00:00:00:00:00:00"
+
 service imsqmidaemon /system/vendor/bin/imsqmidaemon
     class main
     user radio
