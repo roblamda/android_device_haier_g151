@@ -21,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.target=dpm1 \
+    persist.data.target=dpm4 \
     persist.data.qmi.adb_logmask=0 \
     persist.radio.multisim.config=dsds \
     persist.radio.custom_ecc=1 \
