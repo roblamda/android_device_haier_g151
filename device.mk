@@ -56,7 +56,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8909 \
-    libmm-qcamera \
     libshim_camera \
     Snap
 
