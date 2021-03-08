@@ -21,20 +21,20 @@
         <value>400000</value>
         <value>533333</value>
         <value>800000</value>
-        <value>998000</value>
+        <value>998400</value>
         <value>1094400</value>
         <value>1190400</value>
     </array>
     <item name="cpu.clusters.cores">4</item>
     <array name="cpu.core_power.cluster0">
-        <value>151</value>
-        <value>169</value>
-        <value>177</value>
-        <value>195</value>
-        <value>259</value>
-        <value>307</value>
-        <value>353</value>
+        <value>66</value>
+        <value>115</value>
+        <value>178</value>
+        <value>257</value>
+        <value>330</value>
+        <value>407</value>
+        <value>438</value>
     </array>
     <item name="cpu.suspend">1.6</item>
-    <item name="battery.capacity">2200</item>
+    <item name="battery.capacity">1950</item>
 </device>
