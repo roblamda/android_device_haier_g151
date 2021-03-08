@@ -478,6 +478,9 @@ int NativeSensorManager::getDataInfo() {
 				list->driver = new GyroSensor(list);
 				sensor_gyro = *(list->sensor);
 				break;
+			case SENSOR_TYPE_PRESSURE:
+				list->driver = new PressureSensor(list);
+				break;
 			default:
 				list->driver = NULL;
 				ALOGE("No handle %d for this type sensor!", i);
