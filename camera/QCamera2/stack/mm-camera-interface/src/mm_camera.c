@@ -271,7 +271,7 @@ int32_t mm_camera_open(mm_camera_obj_t *my_obj)
         n_try--;
         my_obj->ctrl_fd = open(dev_name, O_RDWR | O_NONBLOCK);
         CDBG("%s:  ctrl_fd = %d, errno == %d", __func__, my_obj->ctrl_fd, errno);
-        if((my_obj->ctrl_fd > 0) || (errno != EIO) || (n_try <= 0 )) {
+        if((my_obj->ctrl_fd > 0) || ((errno != EIO) && (errno != EINVAL)) || (n_try <= 0 )) {
             CDBG_ERROR("%s:  opened, break out while loop", __func__);
             break;
         }
@@ -328,10 +328,9 @@ int32_t mm_camera_open(mm_camera_obj_t *my_obj)
                                  MM_CAMERA_POLL_TYPE_EVT);
     mm_camera_evt_sub(my_obj, TRUE);
 
-    /* unlock cam_lock, we need release global intf_lock in camera_open(),
-     * in order not block operation of other Camera in dual camera use case.*/
-    pthread_mutex_unlock(&my_obj->cam_lock);
     CDBG("%s:  end (rc = %d)\n", __func__, rc);
+    /* we do not need to unlock cam_lock here before return
+     * because for open, it's done within intf_lock */
     return rc;
 
 on_error:
@@ -344,9 +343,8 @@ on_error:
        my_obj->ds_fd = 0;
     }
 
-    /* unlock cam_lock, we need release global intf_lock in camera_open(),
-     * in order not block operation of other Camera in dual camera use case.*/
-    pthread_mutex_unlock(&my_obj->cam_lock);
+    /* we do not need to unlock cam_lock here before return
+     * because for open, it's done within intf_lock */
     return rc;
 }
 
