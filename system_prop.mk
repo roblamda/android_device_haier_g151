@@ -7,9 +7,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.cpp.duplication=false \
-    persist.camera.hal.debug.mask=0 \
-    ro.camera.sensors=ov8865_q8v18a,ov2680_skuhf,ov2680_5987fhq
+    persist.camera.cpp.duplication=false
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
