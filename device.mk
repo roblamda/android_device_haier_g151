@@ -115,7 +115,8 @@ PRODUCT_PACKAGES += \
 
 # Sensor HAL
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-impl.g151 \
+    android.hardware.sensors@1.0-service.g151 \
     calmodule.cfg \
     libcalmodule_memsic \
     sensors.msm8909 \
