@@ -454,9 +454,26 @@ vendor/lib/libOmxAacDec.so|7125dc53aaee56170b269278865b4ef3c4c8c61b
 vendor/lib/libOmxEvrcDec.so|9d7ebe0f32b84f131f28aab38ce90fb65ac1c87d
 vendor/lib/libOmxQcelp13Dec.so|b33a772d50668ac636b5db6a2d22d31f74ca5b2e
 
-# Perf
-bin/perfd:vendor/bin/perfd
-vendor/lib/libqti-perfd-client.so
+# Perf - from Dynamo_00WW-user 8.1.0 OPR1.170623.026 00WW_1_16G release-keys
+lib/libqti-perfd-client_system.so|4af46963671c27b51e0cd368164516e12c31be69
+lib/libqti-util_system.so|b8fe3e1510319bda6e960fc22e3bb0748a7d6110
+lib/libqti_performance.so|98453c79468869ddcfe75a4c25221bdf87d618b0
+vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|a691d13becf0ec9023e6d7cad3566cc240f76c48
+vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b50182aadab2e31409df61c523d0fb914a394e43
+vendor/etc/perf/perfboostsconfig.xml|6f0887c21f284bae26ef0fbeb9d6cb7c2a78d1d5
+vendor/lib/libperfgluelayer.so|0e24b1e39dd3203514ab445530b6b29b0dd9b969
+vendor/lib/libqti-perfd-client.so|232a87c09f3807e25a8d57e176ae93724e856c12
+vendor/lib/libqti-perfd.so|b806efa38c19680501ab329e3a3020999d5b1e8a
+vendor/lib/libqti-util.so|26c0e29785df406d2a4a1efbe6b1760e9d780b26
+vendor/lib/libqti-utils.so|099c8d4824e39c0985c45f0212849f679768cddb
+vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so|337965a1e788bfefef699535f7c0b57ba1d386b3
+
+# Perf-IOP - from Dynamo_00WW-user 8.1.0 OPR1.170623.026 00WW_1_16G release-keys
+vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so|49ffa988a97682bfa87a80b89e3c32a3f4f5d9b2
+vendor/lib/libqti-iopd-client.so|fa5e4a2f32ed0f2067512984c6770563ed3e264e
+vendor/lib/libqti-iopd.so|fbfb334ca824b190e9f82197ea5f107716cbc286
+vendor/lib/vendor.qti.hardware.iop@1.0_vendor.so|f4c57d953b8ba3cc13c5b1bc103b20a1138bfa72
+vendor/lib/vendor.qti.hardware.iop@2.0_vendor.so|62f6f436540b5527186610f34bfa86641566330c
 
 # Postprocessing - from jalebi
 bin/mm-pp-daemon:vendor/bin/mm-pp-daemon|56777bd6e5023b2d39efa3a3a7df11af3a06aa73
@@ -560,10 +577,10 @@ etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 # STLport - from flo
 vendor/lib/libstlport.so|e61ef21decc21472e06eacc841e7d61bf68ca9f3
 
-# Thermal - from jalebi
-vendor/bin/thermal-engine|5d7e03971fdc7f2e16c84a72430734bcb7328e82
-vendor/lib/libthermalclient.so|de4a1dc98dec535da16059f44229043952638c29
-vendor/lib/libthermalioctl.so|c32eca3eb450e9bb0a70f15878253b2dad48e5c7
+# Thermal - from Dynamo_00WW-user 8.1.0 OPR1.170623.026 00WW_1_16G release-keys
+vendor/bin/thermal-engine|4a4323b66c917b950db073f7b72a077ac04a0a79
+vendor/lib/libthermalclient.so|1161394371a0c7b78c9ae50dcac20673c0b8c052
+vendor/lib/libthermalioctl.so|27ecc149cb21f0392f5b21397fb515a01a500949
 
 # Time services - from jalebi
 -vendor/lib/libtime_genoff.so|2f98702ccced493fd8d94b3eff099f4b53563612
