@@ -23,15 +23,16 @@ bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 vendor/lib/libbtnv.so
 vendor/lib/mmi_bluetooth.so
 
+# Camera - from huawei scale
+vendor/bin/mm-qcamera-daemon|f6ac790d2bc8e5ff2e93b88b25f2b1fd813ee5e3
+vendor/lib/libjpegdhw.so|c18d9aff5f28d61e934f70cf3e168b3abd4b9635
+vendor/lib/libjpegehw.so|aab51a22017846cdf434c809bc1f6b4b241c88c8
+vendor/lib/libmm-qcamera.so|da9b8172cdfd4b4aafcd0479a79e74a500448790
+vendor/lib/libmmjpeg.so|cb6129f1309963f6e2773e7a6833fd2e6448c0ac
+vendor/lib/libmmqjpeg_codec.so|93f5ea50761aa8636e2288632f7a9ed078524991
+vendor/lib/libqomx_jpegenc.so|5b55aa8528d6deb1a9ca4e22813370991af085f9
+
 # Camera
-bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
-vendor/lib/libcamerahandler_jni.so
-vendor/lib/libjpegdhw.so
-vendor/lib/libjpegehw.so
-vendor/lib/libmmjpeg.so
-vendor/lib/libmmqjpeg_codec.so
-vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
 vendor/lib/libmmcamera2_iface_modules.so
@@ -50,10 +51,7 @@ vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_wavelet_lib.so
-vendor/lib/libmmipl.so
-vendor/lib/libmmqjpeg_codec.so
 vendor/lib/liboemcamera.so
-vendor/lib/libqomx_jpegenc.so
 
 # Camera actuator
 vendor/lib/libactuator_a3907.so
