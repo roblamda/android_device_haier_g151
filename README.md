@@ -2,29 +2,29 @@ Copyright (C) 2016 - The CyanogenMod Project
 
 Copyright (C) 2017 - The LineageOS Project
 
-Device configuration for Redmi 2 / Pro / Prime (wt88047)
+Device configuration for Andromax A / A16C3H (g151)
 ========================================================
 
-The Wingtech Redmi 2 (codenamed _"wt88047"_) is a mid-range smartphone from Wingtech.
-It was announced on January 2015.
+The Haier Andromax A (codenamed _"g151"_) is a entry-level smartphone from Haier.
+It was announced on June 2016.
 
 ## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-SoC     | Qualcomm MSM8916 Snapdragon 410
-CPU     | Quad-core 1.2 GHz ARM® Cortex™ A53
-GPU     | 400MHz Adreno 306
-Memory  | 1/2 GB RAM
-Shipped Android Version | 4.4.4
-Storage | 8/16 GB
+SoC     | Qualcomm MSM8909 Snapdragon 210
+CPU     | Quad-core 1.1 GHz ARM® Cortex™ A7
+GPU     | 400MHz Adreno 304
+Memory  | 1 GB RAM
+Shipped Android Version | 5.1.1
+Storage | 8 GB
 MicroSD | Up to 32 GB
-Battery | Removable Li-Ion 2200mAh battery
-Dimensions | 134 x 67.2 x 9.4 mm
-Display | 720 x 1280 pixels, 4.7 inches (~312 ppi pixel density)
-Rear Camera | 8 MP, f/2.2, 28mm, autofocus, LED flash
-Front Camera | 2 MP, 720p
+Battery | Removable Li-Ion 1950mAh battery
+Dimensions | 138 x 72 x 9 mm
+Display | 854 x 480 pixels, 4.5 inches (~218 ppi pixel density)
+Rear Camera | 5 MP, autofocus, LED flash
+Front Camera | 5 MP
 
 ## Device picture
 
-![Redmi 2](http://cdn.ndtv.com/tech/xiaomi_redmi_2_white_screen.jpg "Redmi 2 in white")
+![Andromax A](https://www.begawei.com/wp-content/uploads/2016/06/smartfren-andromax-a-f.jpg "Andromax A in black")
