@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/haier/g151/full_g151.mk)
+$(call inherit-product, device/zte/x1/full_x1.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
@@ -22,16 +22,15 @@ $(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
 TARGET_BOARD_PLATFORM_VARIANT := msm8909
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := A16C3H, g151
+TARGET_OTA_ASSERT_DEVICE := x1
 
-PRODUCT_NAME := lineage_g151
-BOARD_VENDOR := haier
-PRODUCT_DEVICE := g151
+PRODUCT_NAME := lineage_x1
+BOARD_VENDOR := zte
+PRODUCT_DEVICE := x1
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Build fingerprint
-BUILD_FINGERPRINT="Smartfren/A16C3H/A16C3H:5.1.1/LMY47V/YNC1TBS1ZM:user/release-keys"
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="msm8909_x20_g151-user 5.1.1 LMY47V eng.root.20160527.123412 release-keys"
+    BUILD_FINGERPRINT="Xiaomi/ido/ido:5.1.1/LMY47V/V8.1.3.0.LAIMIDI:user/release-keys" \
+    PRIVATE_BUILD_DESC="ido-user 5.1.1 LMY47V V8.1.3.0.LAIMIDI release-keys"

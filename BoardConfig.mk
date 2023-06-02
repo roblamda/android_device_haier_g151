@@ -20,7 +20,7 @@ FORCE_32_BIT := true
 # Inherit from msm8909-common
 include device/cyanogen/msm8909-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/haier/g151
+DEVICE_PATH := device/zte/x1
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -45,7 +45,7 @@ endif
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 
 # Display
-TARGET_SCREEN_DENSITY := 240
+TARGET_SCREEN_DENSITY := 280
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -72,7 +72,7 @@ TARGET_NO_RPC := true
 BOARD_DTBTOOL_ARGS := -2
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
-TARGET_KERNEL_CONFIG := lineageos_g151_defconfig
+TARGET_KERNEL_CONFIG := lineageos_x1_defconfig
 BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1 androidboot.selinux=permissive
 
 # Power
@@ -91,4 +91,4 @@ TARGET_LD_SHIM_LIBS += \
     /vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so
 
 # inherit from the proprietary version
-include vendor/haier/g151/BoardConfigVendor.mk
+include vendor/zte/x1/BoardConfigVendor.mk

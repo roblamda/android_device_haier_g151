@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_g151.mk
+    $(LOCAL_DIR)/lineage_x1.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_g151-user \
-    lineage_g151-userdebug \
-    lineage_g151-eng
+    lineage_x1-user \
+    lineage_x1-userdebug \
+    lineage_x1-eng

@@ -17,12 +17,12 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from g151 device
-$(call inherit-product, device/haier/g151/device.mk)
+# Inherit from x1 device
+$(call inherit-product, device/zte/x1/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := g151
-PRODUCT_NAME := full_g151
-PRODUCT_BRAND := Smartfren
-PRODUCT_MODEL := Andromax A16C3H
-PRODUCT_MANUFACTURER := Haier
+PRODUCT_DEVICE := x1
+PRODUCT_NAME := full_x1
+PRODUCT_BRAND := zte
+PRODUCT_MODEL := ZTE X1
+PRODUCT_MANUFACTURER := ZTE
